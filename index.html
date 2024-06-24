@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevascas da Nossa Infância</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Reference to your external CSS -->
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        #grain {
+            pointer-events: none;
+            background-image: linear-gradient(174.2deg, rgb(250, 235, 213) 7.1%, rgb(225, 236, 247) 67.4%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="grain" class="vw-100 vh-100 w-100 position-fixed top-0 bottom-0"></div>
+
+    <div class="position-absolute end-0 start-0 w-100">
+
+        <header class="vh-100 w-100 d-flex flex-column gap-1 justify-content-center align-items-center">
+            <div class="d-flex gap-3 justify-content-center align-items-center w-100">
+                <hr class="border-3" />
+                <img src="/icons/star.svg" width="40px">
+                <hr class="border-3" />
+            </div>
+
+            <h1 class="text-center text-up mb-2">
+                Nevascas da <br /> Nossa Infância
+            </h1>
+            <span>Descubra os áudios da infância de uma família Russa no ínicio dos anos 1900.</span>
+
+            <div class="flex flex-col mt-5 align-items-center justify-content-center text-center">
+                <h2 class="mb-1">Projeto realizado por</h2>
+                <p>Anastasiya German</p>
+            </div>
+        </header>
+
+        <div class="container justify-content-center align-items-start mb-5">
+
+            <section class="row row-cols-3">
+
+                <!-- IMAGEM 1 -->
+                <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
+                    <div class="position-relative gallery-item" style="cursor: pointer;">
+                        <img src="images/christmas.jpeg" alt="Image 1" class="w-100 rounded">
+                        <div
+                            class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
+                            <button class="btn btn-light btn-opacity-70 p-2 audio-button"
+                                data-audio="audios/christmas_pt.mp3">
+                                <img src="/icons/pt.svg" />
+                            </button>
+                            <button class="btn btn-light btn-opacity-70  p-2 audio-button"
+                                data-audio="audios/christmas_rr.mp3">
+                                <img src="/icons/uc.svg" />
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="d-flex flex-column mt-3">
+                        <li class="mb-1">Natal na Rússia em família</li>
+                        <li>Materiais: Aguarela | Grafite</li>
+                        <li>Dimensões: 123x122cm</li>
+                    </ul>
+                </div>
+
+                <!-- IMAGEM 2 -->
+                <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
+                    <div class="position-relative gallery-item" style="cursor: pointer;">
+                        <img src="images/my_story.jpeg" alt="Image 1" class="w-100 rounded">
+                        <div
+                            class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
+                            <button class="btn btn-light btn-opacity-70 p-2 audio-button"
+                                data-audio="audios/my_story_pt.mp3">
+                                <img src="/icons/pt.svg" />
+                            </button>
+                            <button class="btn btn-light btn-opacity-70  p-2 audio-button"
+                                data-audio="audios/my_story_rr.mp3">
+                                <img src="/icons/uc.svg" />
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="d-flex flex-column mt-3">
+                        <li class="mb-1">Natal na Rússia em família</li>
+                        <li>Materiais: Aguarela | Grafite</li>
+                        <li>Dimensões: 123x122cm</li>
+                    </ul>
+                </div>
+
+                <!-- IMAGEM 3 -->
+                <div class="col-12 my-5"  data-aos="fade-up">
+                    <div class="position-relative gallery-item" style="cursor: pointer;">
+                        <img src="images/easter.jpeg" alt="Image 1" class="w-100 rounded">
+                        <div
+                            class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
+                            <button class="btn btn-light btn-opacity-70 p-2 audio-button"
+                                data-audio="audios/easter_pt.mp3">
+                                <img src="/icons/pt.svg" />
+                            </button>
+                            <button class="btn btn-light btn-opacity-70  p-2 audio-button"
+                                data-audio="audios/easter_rr.mp3">
+                                <img src="/icons/uc.svg" />
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="d-flex flex-column mt-3">
+                        <li class="mb-1">Natal na Rússia em família</li>
+                        <li>Materiais: Aguarela | Grafite</li>
+                        <li>Dimensões: 123x122cm</li>
+                    </ul>
+                </div>
+
+                <!-- IMAGEM 4 -->
+                <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
+                    <div class="position-relative gallery-item" style="cursor: pointer;">
+                        <img src="images/grandfather.jpeg" alt="Image 1" class="w-100 rounded">
+                        <div
+                            class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
+                            <button class="btn btn-light btn-opacity-70 p-2 audio-button"
+                                data-audio="audios/grandfather_pt.mp3">
+                                <img src="/icons/pt.svg" />
+                            </button>
+                            <button class="btn btn-light btn-opacity-70  p-2 audio-button"
+                                data-audio="audios/grandfather_rr.mp3">
+                                <img src="/icons/uc.svg" />
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="d-flex flex-column mt-3">
+                        <li class="mb-1">Natal na Rússia em família</li>
+                        <li>Materiais: Aguarela | Grafite</li>
+                        <li>Dimensões: 123x122cm</li>
+                    </ul>
+                </div>
+
+                <!-- IMAGEM 5 -->
+                <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
+                    <div class="position-relative gallery-item" style="cursor: pointer;">
+                        <img src="images/mother.jpeg" alt="Image 1" class="w-100 rounded">
+                        <div
+                            class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
+                            <button class="btn btn-light btn-opacity-70 p-2 audio-button"
+                                data-audio="audios/mother_pt.mp3">
+                                <img src="/icons/pt.svg" />
+                            </button>
+                            <button class="btn btn-light btn-opacity-70  p-2 audio-button"
+                                data-audio="audios/mother_rr.mp3">
+                                <img src="/icons/uc.svg" />
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="d-flex flex-column mt-3">
+                        <li class="mb-1">Natal na Rússia em família</li>
+                        <li>Materiais: Aguarela | Grafite</li>
+                        <li>Dimensões: 123x122cm</li>
+                    </ul>
+                </div>
+
+                <!-- IMAGEM 6 -->
+                <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
+                    <div class="position-relative gallery-item" style="cursor: pointer;">
+                        <img src="images/grandmother.jpeg" alt="Image 1" class="w-100 rounded">
+                        <div
+                            class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
+                            <button class="btn btn-light btn-opacity-70 p-2 audio-button"
+                                data-audio="audios/grandmother_pt.mp3">
+                                <img src="/icons/pt.svg" />
+                            </button>
+                            <button class="btn btn-light btn-opacity-70  p-2 audio-button"
+                                data-audio="audios/grandmother_rr.mp3">
+                                <img src="/icons/uc.svg" />
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="d-flex flex-column mt-3">
+                        <li class="mb-1">Natal na Rússia em família</li>
+                        <li>Materiais: Aguarela | Grafite</li>
+                        <li>Dimensões: 123x122cm</li>
+                    </ul>
+                </div>
+
+                <!-- IMAGEM 7 -->
+                <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
+                    <div class="position-relative gallery-item" style="cursor: pointer;">
+                        <img src="images/church.jpeg" alt="Image 1" class="w-100 rounded">
+                        <div
+                            class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
+                            <button class="btn btn-light btn-opacity-70 p-2 audio-button"
+                                data-audio="audios/church_pt.mp3">
+                                <img src="/icons/pt.svg" />
+                            </button>
+                            <button class="btn btn-light btn-opacity-70  p-2 audio-button"
+                                data-audio="audios/church_rr.mp3">
+                                <img src="/icons/uc.svg" />
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="d-flex flex-column mt-3">
+                        <li class="mb-1">Natal na Rússia em família</li>
+                        <li>Materiais: Aguarela | Grafite</li>
+                        <li>Dimensões: 123x122cm</li>
+                    </ul>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/grained@0.0.2/grained.min.js"></script>
+    <script>
+        var options = {
+            "animate": true,
+            "patternWidth": 172.1,
+            "patternHeight": 447.66,
+            "grainOpacity": 0.05,
+            "grainDensity": 1,
+            "grainWidth": 2.39,
+            "grainHeight": 1
+        }
+
+        grained("#grain", options);
+    </script>
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script> <!-- Reference to your external JavaScript file -->
+</body>
+
+</html>

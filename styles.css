@@ -1,0 +1,134 @@
+
+.container{
+    z-index: 99;
+    margin: auto;
+}
+
+p, span {
+    color: #3b3a40;
+    font-size: 1.4rem;
+}
+
+li {
+    font-family: 'Inter', serif;
+    color: #3b3a40;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+
+h1{
+    font-family: "Elsie", serif;
+    font-weight: 400;
+    background: -webkit-linear-gradient(#5f5a51, #31313b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+    line-height: 110%;
+}
+
+@media(max-width: 655px){
+    h1{
+        font-size: 13vw;
+    }
+}
+
+@media(min-width: 655px){
+    h1{
+        font-size: 4.9rem;
+    }
+}
+
+@media(min-width: 1000px){
+    h1{
+        font-size: 7rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1190px
+    }
+}
+
+@media (min-width: 1000px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 900px
+    }
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ul li:first-child{
+    font-size: 1.9rem;
+    font-weight: 500;
+    opacity: 1;
+    font-family: "Elsie", serif;
+}
+
+header span{
+    max-width: 450px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+@media(max-width: 655px){
+    header span{
+        font-size: 1.1rem;
+        max-width: 320px;
+    }
+}
+
+
+body{
+    font-family: 'Inter', serif;
+}
+
+header h2{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+
+
+header hr{
+    width: 70px;
+}
+
+
+
+
+
+.gallery-item img {
+    transition: transform 0.3s ease;
+}
+
+
+
+.gallery-item .captions {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+@media(max-width: 1024px){
+    .gallery-item .captions {
+        opacity: 1;
+    }
+}
+
+
+@media(min-width: 1024px){
+    .gallery-item:hover img {
+        transform: scale(1.02);
+        /* Apply scale when parent (.gallery-item) is hovered */
+    }
+}
+
+
+.gallery-item:hover .captions {
+    opacity: 1;
+    /* Show captions when parent (.gallery-item) is hovered */
+}

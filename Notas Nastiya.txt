@@ -1,0 +1,8 @@
+-> Página de apresentação, página da galeria e página de um quadro
+-> Galeria de fotografias. Cada fotografia vai ter dois áudios associados.
+-> Nevascas da nossa infância (título)
+-> Cada quadro tem um nome
+-> Mostrar informações acercas de cada quadro (dimensão, técnica, ornamento)
+
+https://haeckel.tilda.ws/en
+https://etrotextiles.etro.com/
