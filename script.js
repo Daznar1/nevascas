@@ -34,7 +34,7 @@ document.querySelectorAll('.audio-button').forEach(button => {
                 });
             }
             button.buttonState.audio.play();
-            button.innerHTML = '<img src="/icons/pause.svg" />';
+            button.innerHTML = '<img src="images/icons/pause.svg" />';
             button.buttonState.playing = true;
         } else {
             // If current audio is playing, pause it and reset to the beginning
@@ -56,4 +56,30 @@ galleryItems.forEach(item => {
     item.addEventListener('mouseleave', event => {
         item.classList.remove('hover');
     });
+});
+
+
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImage');
+const closeModal = document.getElementsByClassName('close')[0];
+
+document.querySelectorAll('.gallery-item img').forEach(img => {
+    img.addEventListener('click', function () {
+        modal.style.display = 'flex';
+        modalImg.src = this.src;
+    });
+});
+
+closeModal.addEventListener('click', function () {
+    modal.style.display = 'none';
+});
+
+modalImg.addEventListener('click', function () {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', function (event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
 });

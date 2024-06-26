@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css"> <!-- Reference to your external CSS -->
 
     <!-- AOS CSS -->
@@ -55,7 +56,7 @@
                 <!-- IMAGEM 1 -->
                 <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
                     <div class="position-relative gallery-item" style="cursor: pointer;">
-                        <img src="images/christmas.jpeg" alt="Image 1" class="w-100 rounded">
+                        <img src="images/christmas.jpeg" alt="Image 1" class="w-100">
                         <div
                             class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
                             <button class="btn btn-light btn-opacity-70 p-2 audio-button"
@@ -78,7 +79,7 @@
                 <!-- IMAGEM 2 -->
                 <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
                     <div class="position-relative gallery-item" style="cursor: pointer;">
-                        <img src="images/my_story.jpeg" alt="Image 1" class="w-100 rounded">
+                        <img src="images/my_story.jpeg" alt="Image 1" class="w-100">
                         <div
                             class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
                             <button class="btn btn-light btn-opacity-70 p-2 audio-button"
@@ -101,7 +102,7 @@
                 <!-- IMAGEM 3 -->
                 <div class="col-12 my-5"  data-aos="fade-up">
                     <div class="position-relative gallery-item" style="cursor: pointer;">
-                        <img src="images/easter.jpeg" alt="Image 1" class="w-100 rounded">
+                        <img src="images/easter.jpeg" alt="Image 1" class="w-100">
                         <div
                             class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
                             <button class="btn btn-light btn-opacity-70 p-2 audio-button"
@@ -124,7 +125,7 @@
                 <!-- IMAGEM 4 -->
                 <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
                     <div class="position-relative gallery-item" style="cursor: pointer;">
-                        <img src="images/grandfather.jpeg" alt="Image 1" class="w-100 rounded">
+                        <img src="images/grandfather.jpeg" alt="Image 1" class="w-100">
                         <div
                             class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
                             <button class="btn btn-light btn-opacity-70 p-2 audio-button"
@@ -147,7 +148,7 @@
                 <!-- IMAGEM 5 -->
                 <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
                     <div class="position-relative gallery-item" style="cursor: pointer;">
-                        <img src="images/mother.jpeg" alt="Image 1" class="w-100 rounded">
+                        <img src="images/mother.jpeg" alt="Image 1" class="w-100">
                         <div
                             class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
                             <button class="btn btn-light btn-opacity-70 p-2 audio-button"
@@ -170,7 +171,7 @@
                 <!-- IMAGEM 6 -->
                 <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
                     <div class="position-relative gallery-item" style="cursor: pointer;">
-                        <img src="images/grandmother.jpeg" alt="Image 1" class="w-100 rounded">
+                        <img src="images/grandmother.jpeg" alt="Image 1" class="w-100">
                         <div
                             class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
                             <button class="btn btn-light btn-opacity-70 p-2 audio-button"
@@ -193,7 +194,7 @@
                 <!-- IMAGEM 7 -->
                 <div class="col-12 col-md-6 my-5"  data-aos="fade-up">
                     <div class="position-relative gallery-item" style="cursor: pointer;">
-                        <img src="images/church.jpeg" alt="Image 1" class="w-100 rounded">
+                        <img src="images/church.jpeg" alt="Image 1" class="w-100">
                         <div
                             class="position-absolute top-0 end-0 me-3 mt-3 d-flex align-items-center justify-content-center text-center gap-3 captions">
                             <button class="btn btn-light btn-opacity-70 p-2 audio-button"
@@ -217,6 +218,15 @@
 
         </div>
     </div>
+
+    <div id="imageModal" class="modal">
+        <i class="bi bi-x close text-white"></i>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Modal Image">
+        </div>
+    </div>
+    
+    
 
     <script src="https://cdn.jsdelivr.net/npm/grained@0.0.2/grained.min.js"></script>
     <script>
