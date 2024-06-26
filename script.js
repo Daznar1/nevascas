@@ -63,7 +63,7 @@ const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImage');
 const closeModal = document.getElementsByClassName('close')[0];
 
-document.querySelectorAll('.gallery-item img').forEach(img => {
+document.querySelectorAll('.gallery-item > img').forEach(img => {
     img.addEventListener('click', function () {
         modal.style.display = 'flex';
         modalImg.src = this.src;
